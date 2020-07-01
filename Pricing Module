@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+#ifndef PRICINGMODULE_CLASS
+#define PRICINGMODULE_CLASS
+
+class PRICINGMODULE
+{
+
+	private:
+
+		int gallon_requested = 0;
+		string address;
+		double price_of_gallon = 0;
+		double total = 0;
+
+	public:
+
+		void get_gallon_requested(int); // gets the gallon that the user wants
+		void get_address(string ); // non-editable and displays user address
+		void get_price(int); // getting the price of the gallon
+		void calculate_total(); // calculates the price of the gallon
+
+};
+
+#endif;
+
+void PRICINGMODULE::get_gallon_requested(int x)
+{
+	gallon_requested = x;
+
+}
+
+void PRICINGMODULE::get_address(string x)
+{
+
+}
