@@ -54,9 +54,11 @@ const pricingModule = (user) => {
     // Set Gallons Request Factor 
     let gallons = document.getElementById("gallons").value; 
     let gallonFactor; 
+    
     if (gallons > 1000) {
         gallonFactor = 0.02;
-    } else {
+    } 
+    else {
         gallonFactor = 0.03;
     }
 
